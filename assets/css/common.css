@@ -227,7 +227,66 @@ select {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
+}
+
+p, span, h1, h2, h3 {
+    /* 텍스트가 박스를 넘어가면 단어 안에서도 줄바꿈 허용 */
+    word-break: break-all; 
+    /* 또는 단어 단위를 유지하되 너무 길면 자르기 */
+    overflow-wrap: break-word;
+}
+
+@media(max-width:402px){
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+
+    .font-16{
+        font-size: 14px;
+    }
+
+    select,
+    option {
+        font-size: 16px;
+    }
+
+    .gap-40{
+        gap: 20px;
+    }
+
+    .gap-20{
+        gap: 10px;
+    }
+
+    .gap-10{
+        gap: 5px;
+    }
+
+    .margin-b-20{
+        margin-bottom: 10px;
+    }
+
+    .margin-b-40{
+        margin-bottom: 20px;
+    }
+
+    .padding-120{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }

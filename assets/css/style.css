@@ -8,8 +8,7 @@ header{
 }
 
 .nav{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     display: flex;
     margin: auto;
     padding: 20px 0;
@@ -27,12 +26,10 @@ header{
     font-family: 'Pretendard';
     font-size: 35px;
     font-weight: 300;
-
 }
 
 .logo-icon{
-    width: 34px;
-    height: 33px;
+    width: 15%;
 }
 
 .navi{
@@ -46,22 +43,19 @@ header{
 }
 
 .kv{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 80px 0;
+    padding: 40px 0 80px;
+    overflow: hidden;
 }
 
 .kv-img{
     width: 100%;
     max-width: 505px;
     height: auto;
-    aspect-ratio: 505 / 649;
-    background-image: url(../images/KV_img.webp);
-
 }
 
 .kv-content{
@@ -86,24 +80,30 @@ header{
 
 .about{
     background-color: #f0f0f0;
+    background-image: url(../images/about_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .about-content{
+    width: 1240px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/about_bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
     gap: 120px;
+    overflow: hidden;
 }
 
 .about-img{
-    height: auto;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+}
+
+.about-img img{
+    width: 33%;
 }
 
 .about-desc{
@@ -111,8 +111,7 @@ header{
 }
 
 .ab-desc-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     margin: auto;
     height: auto;
     display: flex;
@@ -132,8 +131,7 @@ header{
 
 
 .criteria-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     text-align: center;
     margin: auto;
 }
@@ -159,11 +157,15 @@ header{
 .c-card-icon{
     background-color: #267AC7;
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    aspect-ratio:1/1;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.c-card-icon img{
+    width: 60%;
 }
 
 .card-txt{
@@ -171,8 +173,7 @@ header{
 }
 
 .doctor-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -190,8 +191,7 @@ header{
 }
 
 .solution-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -227,8 +227,7 @@ header{
 }
 
 .before-after-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -309,9 +308,9 @@ header{
 }
 
 .tools-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     margin: auto;
+    overflow: hidden;
 }
 
 .tools-card{
@@ -374,8 +373,7 @@ header{
 }
 
 .room-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     margin: auto;
 }
 
@@ -398,8 +396,7 @@ header{
 }
 
 .reservation-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     margin: auto;
     padding: 40px 0;
     background-color: #fff;
@@ -484,8 +481,7 @@ header{
 }
 
 .map-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -529,8 +525,7 @@ header{
 }
 
 .footer-content{
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     margin: auto;
     padding: 80px 0;
 }
@@ -550,4 +545,66 @@ header{
     flex-wrap: wrap;
     width: 50%;
     gap: 20px 40px;
+}
+
+
+@media(max-width:1240px){
+    .nav,
+    .about-content,
+    .ab-desc-content,
+    .criteria-content,
+    .doctor-content,
+    .solution-content,
+    .before-after-content,
+    .tools-content,
+    .room-content,
+    .reservation-content,
+    .map-content,
+    .footer-content{
+        width: 96%;
+        padding: 0 2%
+    }
+
+    .nav{
+        justify-content: right;
+    }
+
+    .gnb{
+        display: none;
+    }
+
+    .kv{
+        width: 94%;
+        flex-direction: column;
+    }
+
+    .kv-img{
+        width: 80%;
+    }
+
+    
+
+}
+
+@media(max-width:402px){
+
+
+
+    .kv{
+        padding: 20px 0 40px;
+    }
+
+    .kv-content h1{
+        font-size: 32px;
+    }
+
+    .kv-txt h3{
+        display: none;
+    }
+
+    .logo-title{
+        font-size: 20px;
+    }
+
+
 }
