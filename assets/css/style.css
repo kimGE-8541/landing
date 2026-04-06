@@ -404,14 +404,37 @@ header{
 
 .input-box-2{
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
-.input-box input,
+.input-box input{
+    width: 100%;
+    border: 1px solid #686868;
+}
+
 .input-box select{
     width: 100%;
     border: 1px solid #686868;
-    border-radius: 0;
+}
+
+.select-box{
+    width: 100%;
+    max-width: 295px;
+    position: relative;
+}
+
+.select-box::after{
+    content: "";
+    background-image: url(../images/icon/arrow.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 
@@ -435,3 +458,4 @@ header{
     margin-top: 20px;
     gap: 5px;
 }
+
