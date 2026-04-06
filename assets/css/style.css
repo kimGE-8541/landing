@@ -8,7 +8,8 @@ header{
 }
 
 .nav{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     display: flex;
     margin: auto;
     padding: 20px 0;
@@ -35,7 +36,9 @@ header{
 }
 
 .navi{
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .kv-section{
@@ -43,18 +46,20 @@ header{
 }
 
 .kv{
-    width: 1240px;
-    height: 769px;
+    width: 100%;
+    max-width: 1240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding-bottom: 20px;
+    padding: 80px 0;
 }
 
 .kv-img{
-    width: 505px;
-    height: 649px;
+    width: 100%;
+    max-width: 505px;
+    height: auto;
+    aspect-ratio: 505 / 649;
     background-image: url(../images/KV_img.webp);
 
 }
@@ -91,12 +96,14 @@ header{
     align-items: center;
     background-image: url(../images/about_bg.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     gap: 120px;
 }
 
 .about-img{
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about-desc{
@@ -104,9 +111,12 @@ header{
 }
 
 .ab-desc-content{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin: auto;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-between;
     align-items: center;
@@ -122,19 +132,21 @@ header{
 
 
 .criteria-content{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     text-align: center;
     margin: auto;
 }
 
 .criteria-card{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .c-card{
-    width: 100%;
+    flex: 1 1 calc(25% - 20px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,12 +170,9 @@ header{
     margin-bottom: 30px;
 }
 
-.card-desc{
-    font-size: 16px;
-}
-
 .doctor-content{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -176,22 +185,26 @@ header{
 }
 
 .doctor-img{
-    width: 610px;
+    width: 100%;
+    max-width: 610px;
 }
 
 .solution-content{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     display: flex;
     margin: auto;
     justify-content: space-between;
 }
 
 .solution-img{
-    width: 735px;
+    width: 100%;
+    max-width: 735px;
 }
 
 .solution-text{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .solution-title{
@@ -214,7 +227,8 @@ header{
 }
 
 .before-after-content{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -295,66 +309,73 @@ header{
 }
 
 .tools-content{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin: auto;
 }
 
 .tools-card{
-    height: 373px;
-    width: 100%;
+    height: auto;
+    min-height: 373px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tool-01{
     background-image: url(../images/tools-img-01.png);
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: right;
     align-items: flex-end;
     justify-content: end;
     padding: 20px 20px;
+    flex: 1 1 calc(25% - 20px);
 }
 
 .tool-02{
     background-image: url(../images/tools-img-02.png);
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: right;
     align-items: flex-end;
     justify-content: end;
     padding: 20px 20px;
+    flex: 1 1 calc(25% - 20px);
 }
 
 .tool-03{
     background-image: url(../images/tools-img-03.png);
     width: 100%;    
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: right;
     align-items: flex-end;
     justify-content: end;
     padding: 20px 20px;
+    flex: 1 1 calc(25% - 20px);
 }
 
 .tool-04{
     background-image: url(../images/tools-img-04.png);
     width: 100%;    
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: right;
     align-items: flex-end;
     justify-content: end;
     padding: 20px 20px;
+    flex: 1 1 calc(25% - 20px);
 }
 
 .room-content{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin: auto;
 }
 
@@ -377,7 +398,8 @@ header{
 }
 
 .reservation-content{
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin: auto;
     padding: 40px 0;
     background-color: #fff;
@@ -388,10 +410,12 @@ header{
 }
 
 .input-cta{
-    width: 820px;
+    width: 100%;
+    max-width: 820px;
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .input-box{
@@ -459,3 +483,71 @@ header{
     gap: 5px;
 }
 
+.map-content{
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 105px;
+}
+
+.map-number{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.call-number{
+    position: relative;
+    padding-left: 35px;
+}
+
+.call-number::before{
+    content: "";
+    background-image: url(../images/icon/call_icon.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.t-time{
+    display: flex;
+}
+
+.daytime{
+    text-align: center;
+}
+
+.footer{
+    background-color: #333;
+}
+
+.footer-content{
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.footer-text .logo{
+    padding-right: 40px;
+    border-right: 1px solid #686868;
+    margin-right: 40px;
+}
+
+.footer-text{
+    display: flex;
+}
+
+.footer-info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 20px 40px;
+}
