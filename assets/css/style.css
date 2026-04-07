@@ -2,7 +2,7 @@
 
 header{
     position: sticky;
-    top: 0px;
+    top: 0;
     background-color: #267AC7;
     z-index: 99;
 }
@@ -11,20 +11,20 @@ header{
     width: 1240px;
     display: flex;
     margin: auto;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo{
     display: flex;
-    gap: 5px;
+    gap: 0.313rem;
     align-items: center;
 }
 
 .logo-title{
     font-family: 'Pretendard';
-    font-size: 35px;
+    font-size: 2.188rem;
     font-weight: 300;
 }
 
@@ -48,7 +48,7 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 40px 0 80px;
+    padding: 2.5rem 0 5rem;
     overflow: hidden;
 }
 
@@ -65,17 +65,17 @@ header{
 }
 
 .kv-content h1{
-    font-size: 68px;
+    font-size: 4.25rem;
 }
 
 .kv-content .kv-txt h3{
-    letter-spacing: 0.5em
+    letter-spacing: 50%;
 }
 
 
 .btn-cta{
-    border: 3px solid #fff;
-    padding: 15px 30px;
+    border: 0.188rem solid #fff;
+    padding: 0.938rem 1.875rem;
 }
 
 .about{
@@ -93,7 +93,7 @@ header{
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 7.5rem;
     overflow: hidden;
 }
 
@@ -123,7 +123,7 @@ header{
     display: flex;
     align-items: baseline;
     justify-content: center;
-    gap: 3px;
+    gap: 0.188rem;
 }
 
 
@@ -142,14 +142,15 @@ header{
 }
 
 .c-card{
-    flex: 1 1 calc(25% - 20px);
+    width: 23%;
+    min-width: 295px;
     height: 394px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     border: 1px solid #267AC7;
-    padding: 80px 20px;
+    padding: 5rem 1.25rem;
 
 }
 
@@ -168,7 +169,7 @@ header{
 }
 
 .card-txt{
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .doctor-content{
@@ -177,11 +178,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 105px;
+}
+
+.doctor-introduce{
+    padding-left: 6.563rem;
 }
 
 .doctor-title{
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 .doctor-img{
@@ -208,7 +212,7 @@ header{
 
 .solution-title{
     text-align: right;
-    margin-bottom: 160px;
+    margin-bottom: 10rem;
 }
 
 .solution-tag{
@@ -218,7 +222,7 @@ header{
 .solution-tag h2{
     width: 100%;
     background-color: #267AC7;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .before-after{
@@ -415,7 +419,8 @@ header{
 }
 
 .input-box{
-    width: 610px;
+    width: 100%;
+    max-width: 610px;
     display: flex;
     flex-direction: column;
 }
@@ -468,7 +473,8 @@ header{
 }
 
 .rev-cta{
-    width: 190px;
+    width: 100%;
+    max-width: 190px;
     background-color: #267AC7;
 }
 
@@ -552,7 +558,6 @@ header{
     .about-content,
     .ab-desc-content,
     .criteria-content,
-    .doctor-content,
     .solution-content,
     .before-after-content,
     .tools-content,
@@ -599,10 +604,26 @@ header{
 
 
     .c-card{
-        flex: 0 0 calc(50%-15px);
-        max-width: 295px;
-        min-width: 180px;
+        width: 33%;
+        min-width: 178px;
     }
+
+    .doctor-content{
+        width: 96%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-left: 0;
+        gap: 2.5rem;
+    }
+
+    .doctor-introduce{
+        text-align: center;
+        padding: 0;
+    }
+    
+
+
+
 
 }
 
@@ -610,15 +631,15 @@ header{
 
 
     .logo-title{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .kv{
-        padding: 20px 0 40px;
+        padding: 1.25rem 0 2.5rem;
     }
 
     .kv-content h1{
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .kv-txt h3{
@@ -626,7 +647,7 @@ header{
     }
 
     .about-content{
-        gap: 30px;
+        gap: 1.875rem;
     }
 
     .about-title p{
@@ -638,13 +659,40 @@ header{
     }
 
     .c-card{
-        flex: 0 0 calc(50% - 15px);
-        height: 250px;
-        padding: 20px 10px;
-        min-width: 160px;
+        width: 45%;
+        padding: 1.25rem 0.625rem;
+        max-width: 178px;
+        height: 215.5px;
     }
 
     .c-card-icon{
         width: 80px;
     }
+
+    .card-txt{
+        margin-bottom: 0.938rem;
+    }
+
+    .doctor-content{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+
+    .doctor-introduce{
+        text-align: left;
+        padding-left: 1.25rem;
+    }
+
+    .doctor-history{
+        display: none;
+    }
+
+    .doctor-img{
+        width: 50%;
+        max-width: 178px;
+    }
+    
+
 }

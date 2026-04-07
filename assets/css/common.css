@@ -124,43 +124,46 @@
     font-display: swap;
 }
 
+body{
+    font-size: 16px;
+}
 
 h1{
     font-family: 'A2Z';
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: 600;
     line-height: 120%;
 }
 
 h2{
     font-family: 'A2Z';
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 600;
     line-height: 120%;
 }
 
 h3{
     font-family: 'A2Z';
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: 600;
     line-height: 120%;
 }
 
 p{
     font-family: 'Pretendard';
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 400;
     line-height: 120%;
 }
 
 .font-16{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 select,
 option {
     font-family: 'Pretendard';
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 400;
     line-height: 120%;
 }
@@ -194,7 +197,7 @@ select {
 }
 
 .radius-10{
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .radius-100{
@@ -202,28 +205,28 @@ select {
 }
 
 .gap-40{
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .gap-20{
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .gap-10{
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .margin-b-20{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .margin-b-40{
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .padding-120{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
 }
 
 img {
@@ -241,52 +244,52 @@ p, span, h1, h2, h3 {
 
 @media(max-width:402px){
     h1{
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     h2{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     h3{
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     
     p{
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .font-16{
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     select,
     option {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .gap-40{
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .gap-20{
-        gap: 10px;
+        gap: 0.625rem;
     }
 
     .gap-10{
-        gap: 5px;
+        gap: 0.313rem;
     }
 
     .margin-b-20{
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     .margin-b-40{
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .padding-120{
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
     }
 }
