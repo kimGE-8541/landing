@@ -100,10 +100,11 @@ header{
 .about-img{
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .about-img img{
-    width: 33%;
+    width: 30%;
 }
 
 .about-desc{
@@ -113,12 +114,9 @@ header{
 .ab-desc-content{
     width: 1240px;
     margin: auto;
-    height: auto;
     display: flex;
-    flex-wrap: wrap;
     text-align: center;
     justify-content: space-between;
-    align-items: center;
 }
 
 .ab-desc-inner {
@@ -139,25 +137,26 @@ header{
 .criteria-card{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .c-card{
     flex: 1 1 calc(25% - 20px);
+    height: 394px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border: 1px solid #267AC7;
-    padding: 80px 0;
+    padding: 80px 20px;
 
 }
 
 .c-card-icon{
     background-color: #267AC7;
     display: flex;
-    width: 40%;
+    width: 100px;
     aspect-ratio:1/1;
     justify-content: center;
     align-items: center;
@@ -562,9 +561,7 @@ header{
     .map-content,
     .footer-content{
         width: 96%;
-        padding: 0 2%
     }
-
     .nav{
         justify-content: right;
     }
@@ -574,7 +571,7 @@ header{
     }
 
     .kv{
-        width: 94%;
+        width: 96%;
         flex-direction: column;
     }
 
@@ -582,13 +579,39 @@ header{
         width: 80%;
     }
 
-    
+    .about-content{
+        gap: 60px;
+    }
+
+    .ab-desc-content{
+        flex-direction: column;
+    }
+
+    .ab-desc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 20px;
+        gap: 20px;
+        align-items: baseline;
+    }
+
+
+
+    .c-card{
+        flex: 0 0 calc(50%-15px);
+        max-width: 295px;
+        min-width: 180px;
+    }
 
 }
 
 @media(max-width:402px){
 
 
+    .logo-title{
+        font-size: 20px;
+    }
 
     .kv{
         padding: 20px 0 40px;
@@ -602,9 +625,26 @@ header{
         display: none;
     }
 
-    .logo-title{
-        font-size: 20px;
+    .about-content{
+        gap: 30px;
     }
 
+    .about-title p{
+        display: none;
+    }
 
+    .about-desc{
+        display: none;
+    }
+
+    .c-card{
+        flex: 0 0 calc(50% - 15px);
+        height: 250px;
+        padding: 20px 10px;
+        min-width: 160px;
+    }
+
+    .c-card-icon{
+        width: 80px;
+    }
 }
