@@ -235,14 +235,9 @@ img {
     display: block;
 }
 
-p, span, h1, h2, h3 {
-    /* 텍스트가 박스를 넘어가면 단어 안에서도 줄바꿈 허용 */
-    word-break: break-all; 
-    /* 또는 단어 단위를 유지하되 너무 길면 자르기 */
-    overflow-wrap: break-word;
-}
 
-@media(max-width:402px){
+
+@media(max-width:540px){
     h1{
         font-size: 1.5rem;
     }
