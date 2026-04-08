@@ -634,18 +634,19 @@ header{
         flex-direction: column-reverse;
         justify-content: center;
         padding-left: 0;
-        gap: 2.5rem;
+        gap: 40px;
     }
 
     .doctor-introduce{
         text-align: center;
         padding: 0;
     }
+
     
     .solution-content{
         flex-direction: column;
         justify-content: center;
-        gap: 2.5rem;
+        gap: 40px;
     }
 
     .solution-text{
@@ -656,7 +657,7 @@ header{
 
     .solution-title{
         text-align: center;
-        margin-bottom: 2.5rem;
+        margin-bottom: 40px;
     }
 
     .room-img{
@@ -682,7 +683,7 @@ header{
 
     .rev-cta{
         max-width: none;
-        padding: 1.25rem;
+        padding: 20px;
     }
 
     .select-box{
@@ -700,11 +701,11 @@ header{
 
 
     .logo-title{
-        font-size: 1.25rem;
+        font-size: 20px;
     }
 
     .kv{
-        padding: 1.25rem 0 2.5rem;
+        padding: 20px 0 40px;
     }
 
     .kv-img{
@@ -712,7 +713,7 @@ header{
     }
 
     .kv-content h1{
-        font-size: 2rem;
+        font-size: 32px;
     }
 
     .kv-txt h3{
@@ -723,7 +724,7 @@ header{
     }
 
     .about-content{
-        gap: 1.875rem;
+        gap: 30px;
     }
 
     .about-title p{
@@ -736,7 +737,7 @@ header{
 
     .c-card{
         width: 40%;
-        padding: 0.625rem 0.625rem;
+        padding: 10px 10px;
         max-width: 178px;
         max-height: 250px;
         min-width: 100px;
@@ -747,11 +748,11 @@ header{
     }
 
     .card-txt{
-        margin-bottom: 0.938rem;
+        margin-bottom: 15px;
     }
 
     .solution-tag h2{
-        padding: 0.625rem;
+        padding: 10px;
     }
 
     .before-01,
@@ -775,7 +776,7 @@ header{
     }
 
     .rev-cta{
-        padding: 1.25rem;
+        padding: 20px;
     }
 
     .small-input{
