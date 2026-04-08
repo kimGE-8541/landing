@@ -15,14 +15,14 @@ header{
     width: 1240px;
     display: flex;
     margin: auto;
-    padding: 1.25rem 0;
+    padding: 20px 0;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo{
     display: flex;
-    gap: 0.313rem;
+    gap: 5px;
     align-items: center;
 }
 
@@ -52,7 +52,7 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 2.5rem 0 5rem;
+    padding: 40px 0 80px;
     overflow: hidden;
 }
 
@@ -78,8 +78,8 @@ header{
 
 
 .btn-cta{
-    border: 0.188rem solid #fff;
-    padding: 0.938rem 1.875rem;
+    border: 3px solid #fff;
+    padding: 15px 30px;
 }
 
 .about{
@@ -97,7 +97,7 @@ header{
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 7.5rem;
+    gap: 120px;
     overflow: hidden;
 }
 
@@ -127,7 +127,7 @@ header{
     display: flex;
     align-items: baseline;
     justify-content: center;
-    gap: 0.188rem;
+    gap: 3px;
 }
 
 
@@ -154,7 +154,7 @@ header{
     justify-content: center;
     align-items: center;
     border: 1px solid #267AC7;
-    padding: 5rem 1.25rem;
+    padding: 80px 20px;
 
 }
 
@@ -173,7 +173,7 @@ header{
 }
 
 .card-txt{
-    margin-bottom: 1.875rem;
+    margin-bottom: 30px;
 }
 
 .doctor-content{
@@ -185,11 +185,11 @@ header{
 }
 
 .doctor-introduce{
-    padding-left: 6.563rem;
+    padding-left: 105px;
 }
 
 .doctor-title{
-    margin-bottom: 5rem;
+    margin-bottom: 80;
 }
 
 .doctor-img{
@@ -213,12 +213,12 @@ header{
 .solution-text{
     width: 100%;
     max-width: 400px;
-    margin-right: 6.563rem;
+    margin-right: 105;
 }
 
 .solution-title{
     text-align: right;
-    margin-bottom: 10rem;
+    margin-bottom: 160px;
 }
 
 .solution-tag{
@@ -228,7 +228,7 @@ header{
 .solution-tag h2{
     width: 100%;
     background-color: #267AC7;
-    padding: 1.25rem;
+    padding: 20px;
 }
 
 .before-after{
@@ -551,7 +551,7 @@ header{
     padding: 80px 0;
 }
 
-.footer-text .logo{
+.logo{
     padding-right: 40px;
     border-right: 1px solid #686868;
     margin-right: 40px;
@@ -689,6 +689,10 @@ header{
         width: 50%;
     }
 
+    .map-content{
+        flex-direction: column;
+    }
+
 }
 
 @media(max-width:540px){
@@ -773,5 +777,37 @@ header{
 
     .big-input{
         padding: 60px 10px;
-    }        
+    }
+
+    .map-content{
+        gap: 40px;
+    }
+    
+    .map-txt{
+        width: 80%;
+    }
+
+    .map-img{
+        width: 80%;
+    }
+
+    .footer-text{
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    .footer-content{
+        padding: 60px 0;
+    }
+
+    .logo{
+        border-right: none;
+        border-bottom: 1px solid #686868;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .logo img{
+        max-width: 30px;
+    }
 }

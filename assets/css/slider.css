@@ -1,0 +1,138 @@
+/* ==========================================================================
+   Vertical Card Slider (Swiper)
+   - 다른 사이트에 붙여도 깨지지 않게, 범위를 .vibeSlider 아래로 제한합니다.
+   - 주요 커스터마이징은 CSS 변수로 조절하세요.
+   ========================================================================== */
+
+.vibeSlider {
+  /* ✅ 여기만 조절해도 대부분 스타일이 바뀝니다 */
+  --slider-max-width: 1240px; /* (가로 버전) 슬라이더 전체 폭 */
+  --slide-width: 360px; /* (가로 버전) 카드 폭 */
+  --slide-height: 560px; /* 카드가 세로로 길게 보이도록 높이 지정 */
+  --space-between: 20px; /* 슬라이드 간격 */
+
+  --radius: 10px;
+  --bg: #0b0c10;
+  --card-bg: rgba(255, 255, 255, 0.06);
+
+  --active-scale: 1; /* 활성 슬라이드 스케일 */
+  --inactive-scale: 0.94; /* 비활성 슬라이드 스케일 */
+
+  --inactive-dim: 0.55; /* 비활성 슬라이드의 어두운 정도 (0~1, 낮을수록 더 어두움) */
+  --inactive-blur: 0px; /* 비활성 슬라이드 블러 (원하시면 1~2px 추천) */
+  --inactive-saturate: 0.85; /* 비활성 슬라이드 채도 */
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* 샘플 페이지 레이아웃 (복붙 시 필요 없으면 제거 가능) */
+.page {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  gap: 22px;
+  padding: 28px 16px 40px;
+  background: radial-gradient(1200px 600px at 50% 0%, rgba(124, 92, 255, 0.28), transparent 60%),
+    radial-gradient(1000px 600px at 20% 40%, rgba(0, 212, 255, 0.12), transparent 55%),
+    #05060a;
+}
+.page__header {
+  width: min(960px, 100%);
+  padding: 0 6px;
+  text-align: center;
+}
+.page__title {
+  margin: 0;
+  font-size: clamp(20px, 2.6vw, 30px);
+  letter-spacing: -0.02em;
+}
+.page__desc {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.vibeSlider__swiper {
+  width: min(var(--slider-max-width), 100%);
+  padding: 10px 8px 14px;
+}
+
+/* Swiper는 slide 크기를 우리가 제어할 수 있도록 width/height를 지정 */
+.vibeSlider .swiper-slide {
+  height: var(--slide-height);
+  width: var(--slide-width);
+  display: grid;
+  align-items: stretch;
+  transition: transform 240ms ease, filter 240ms ease, opacity 240ms ease;
+  will-change: transform, filter, opacity;
+}
+
+/* ✅ 핵심: 활성 슬라이드만 선명하게, 나머지는 dim 처리 */
+.vibeSlider .swiper-slide {
+  opacity: var(--inactive-dim);
+  filter: saturate(var(--inactive-saturate)) blur(var(--inactive-blur));
+  transform: scale(var(--inactive-scale));
+}
+.vibeSlider .swiper-slide.swiper-slide-active {
+  opacity: 1;
+  filter: none;
+  transform: scale(var(--active-scale));
+}
+
+/* 카드 UI */
+.vibeSlider .card {
+  height: 100%;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--card-border);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+.vibeSlider .card__media {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: #fff;
+}
+.vibeSlider .card__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* 샘플용 그라디언트 배경(이미지 대체) */
+.vibeSlider .card__media--a { background-image: url(../images/tools-img-01.png); }
+.vibeSlider .card__media--b { background-image: url(../images/tools-img-02.png); }
+.vibeSlider .card__media--c { background-image: url(../images/tools-img-03.png); }
+.vibeSlider .card__media--d { background-image: url(../images/tools-img-04.png); }
+.vibeSlider .card__media--e { background-image: url(../images/tools-img-05.png); }
+
+.vibeSlider .card__body {
+  padding: 20px 20px 20px;
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  background: #686868;
+}
+.vibeSlider .card__title {
+  margin-bottom: 10px;
+}
+.vibeSlider .card__text {
+  margin: 0;
+}
+
+
+/* 모바일에서 카드 높이 자동 축소 */
+@media (max-width: 540px) {
+  .vibeSlider {
+    --slide-height: 374px;
+    --slide-width: 300px;
+    --slider-max-width: 450px;
+  }
+  .vibeSlider .card__title {
+    margin-bottom: 0;
+  }
+}
+
