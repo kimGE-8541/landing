@@ -1,0 +1,136 @@
+/* =========================================================
+   Before & After Slider - Core Module Styles
+   ---------------------------------------------------------
+   유지보수 포인트:
+   1) 색상 변경: :root 커스텀 변수
+   2) 간격/크기 변경: .ba-slider 및 .ba-slide 관련 값
+   3) 모바일 기준 변경: 하단 @media 구간
+   ========================================================= */
+
+
+
+:root {
+  --ba-bg: none;
+  --ba-text: #1f2a37;
+  --ba-surface: none;
+  --ba-border: none;
+  --ba-label-bg: none;
+  --ba-label-text: #333;
+  --ba-nav-bg: none;
+  --ba-nav-text: #267Ac7;
+  --ba-shadow: none;
+  --ba-radius: 10px;
+}
+
+
+.ba-slider__viewport {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--ba-radius);
+  background: var(--ba-surface);
+  border: 1px solid var(--ba-border);
+  box-shadow: var(--ba-shadow);
+}
+
+/* Track은 JS에서 transform으로 좌우 이동됨 */
+.ba-slider__track {
+  display: flex;
+  transition: transform 420ms ease;
+  will-change: transform;
+}
+
+/* 한 슬라이드는 viewport 폭을 100% 점유 */
+.ba-slide {
+  min-width: 100%;
+  padding: 20px;
+}
+
+/* Before + After 2열 레이아웃 */
+.ba-slide__pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ba-slide__item {
+  position: relative;
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--ba-border);
+}
+
+.ba-slide__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Before / After 텍스트 라벨 */
+.ba-slide__label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  margin: 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--ba-label-text);
+  background: var(--ba-label-bg);
+}
+
+.ba-slider__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--ba-border);
+  border-radius: 999px;
+  background: var(--ba-nav-bg);
+  color: var(--ba-nav-text);
+  font-size: 48px;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  /* box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1); */
+  z-index: 2;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.ba-slider__nav:hover {
+  transform: translateY(-50%) scale(1.04);
+}
+
+.ba-slider__nav:active {
+  transform: translateY(-50%) scale(0.97);
+}
+
+.ba-slider__nav--prev {
+  left: 10px;
+}
+
+.ba-slider__nav--next {
+  right: 10px;
+}
+
+@media (max-width: 540px) {
+  .ba-slide {
+    padding: 12px;
+  }
+
+  .ba-slide__pair {
+    gap: 10px;
+  }
+
+  .ba-slider__nav {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+}

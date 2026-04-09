@@ -1,17 +1,13 @@
 @import url(common.css);
 
-header{
+header {
     position: sticky;
     top: 0;
     background-color: #267AC7;
     z-index: 99;
 }
 
-.br-hide{
-    display: none;
-}
-
-.nav{
+.nav {
     width: 1240px;
     display: flex;
     margin: auto;
@@ -20,33 +16,35 @@ header{
     align-items: center;
 }
 
-.logo{
+.logo {
     display: flex;
     gap: 5px;
     align-items: center;
 }
 
-.logo-title{
+.logo-title {
     font-family: 'Pretendard';
     font-size: 2.188rem;
     font-weight: 300;
 }
 
-.logo-icon{
+.logo-icon {
     width: 15%;
 }
 
-.navi{
+.navi {
     height: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.kv-section{
+/* header end  */
+
+.kv-section {
     background-color: #267AC7;
 }
 
-.kv{
+.kv {
     width: 1240px;
     display: flex;
     justify-content: space-between;
@@ -56,40 +54,42 @@ header{
     overflow: hidden;
 }
 
-.kv-img{
+.kv-img {
     width: 100%;
     max-width: 505px;
     height: auto;
 }
 
-.kv-content{
+.kv-content {
     display: flex;
     flex-direction: column;
     text-align: right;
 }
 
-.kv-content h1{
+.kv-content h1 {
     font-size: 4.25rem;
 }
 
-.kv-content .kv-txt h3{
+.kv-content .kv-txt h3 {
     letter-spacing: 50%;
 }
 
 
-.btn-cta{
+.btn-cta {
     border: 3px solid #fff;
     padding: 15px 30px;
 }
 
-.about{
+/* kv end  */
+
+.about {
     background-color: #f0f0f0;
     background-image: url(../images/about_bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.about-content{
+.about-content {
     width: 1240px;
     margin: auto;
     display: flex;
@@ -101,21 +101,23 @@ header{
     overflow: hidden;
 }
 
-.about-img{
+.about-img {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.about-img img{
+.about-img img {
     width: 30%;
 }
 
-.about-desc{
+/* about end  */
+
+.about-desc {
     background-color: #267AC7;
 }
 
-.ab-desc-content{
+.ab-desc-content {
     width: 1240px;
     margin: auto;
     display: flex;
@@ -130,22 +132,23 @@ header{
     gap: 3px;
 }
 
+/* about 설명 end  */
 
 
-.criteria-content{
+.criteria-content {
     width: 1240px;
     text-align: center;
     margin: auto;
 }
 
-.criteria-card{
+.criteria-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.c-card{
+.c-card {
     width: 23%;
     min-width: 295px;
     height: 394px;
@@ -158,25 +161,27 @@ header{
 
 }
 
-.c-card-icon{
+.c-card-icon {
     background-color: #267AC7;
     display: flex;
     width: 100px;
-    aspect-ratio:1/1;
+    aspect-ratio: 1/1;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.c-card-icon img{
+.c-card-icon img {
     width: 60%;
 }
 
-.card-txt{
+.card-txt {
     margin-bottom: 30px;
 }
 
-.doctor-content{
+/* 4가지 기준 end  */
+
+.doctor-content {
     width: 1240px;
     margin: auto;
     display: flex;
@@ -184,20 +189,22 @@ header{
     align-items: center;
 }
 
-.doctor-introduce{
+.doctor-introduce {
     padding-left: 105px;
 }
 
-.doctor-title{
+.doctor-title {
     margin-bottom: 80;
 }
 
-.doctor-img{
+.doctor-img {
     width: 100%;
     max-width: 610px;
 }
 
-.solution-content{
+/* 의사소개 end  */
+
+.solution-content {
     width: 1240px;
     display: flex;
     margin: auto;
@@ -205,37 +212,39 @@ header{
     align-items: center;
 }
 
-.solution-img{
+.solution-img {
     width: 100%;
     max-width: 610px;
 }
 
-.solution-text{
+.solution-text {
     width: 100%;
     max-width: 400px;
     margin-right: 105;
 }
 
-.solution-title{
+.solution-title {
     text-align: right;
     margin-bottom: 160px;
 }
 
-.solution-tag{
+.solution-tag {
     text-align: center;
 }
 
-.solution-tag h2{
+.solution-tag h2 {
     width: 100%;
     background-color: #267AC7;
     padding: 20px;
 }
 
-.before-after{
+/* 네비 임플란트 end  */
+
+.before-after {
     background-color: #f0f0f0;
 }
 
-.before-after-content{
+.before-after-content {
     width: 1240px;
     margin: auto;
     display: flex;
@@ -244,190 +253,61 @@ header{
     align-items: center;
 }
 
-.b-a-title{
+.b-a-title {
     text-align: center;
 }
 
-.b-a-ex{
+.b-a-ex {
     width: 100%;
 }
 
-.b-a-ex p{
+.b-a-ex p {
     text-align: right;
 }
 
-.b-a-img{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 10px;
-}
+/* ba-slider.css 참조 */
 
-.before-01{
-    width: 100%;
-    aspect-ratio: 610/551;
-    background-image: url(../images/before_img-01.png);
+/* before&after end  */
 
-    background-position: center center;
-    background-repeat: none;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 20px;
-}
-
-.after-01{
-    width: 100%;
-    aspect-ratio: 610/551;
-    background-image: url(../images/after_img-01.png);
-
-    background-position: center center;
-    background-repeat: none;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 20px;
-}
-
-.before-02{
-    width: 100%;
-    aspect-ratio: 610/551;
-    background-image: url(../images/before_img-02.png);
-
-    background-position: center center;
-    background-repeat: none;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 20px;
-}
-
-.after-02{
-    width: 100%;
-    aspect-ratio: 610/551;
-    background-image: url(../images/after_img-02.png);
-
-    background-position: center center;
-    background-repeat: none;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 20px;
-}
-
-.tools{
+.tools {
     background-image: url(../images/tools-bg.png);
 }
 
-.tools-content{
+.tools-content {
     width: 1240px;
     margin: auto;
     overflow: hidden;
 }
 
-.tools-card{
-    height: auto;
-    min-height: 373px;
-    display: flex;
-    justify-content: center;
-}
+/* slider.css 참조 */
 
-.tool-01{
-    background-image: url(../images/tools-img-01.png);
-    width: 100%;
-    min-width: 295px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    align-items: flex-end;
-    justify-content: end;
-    padding: 20px 20px;
-    flex: 1 1 calc(25% - 20px);
-}
+/* 장비소개 end  */
 
-.tool-02{
-    background-image: url(../images/tools-img-02.png);
-    width: 100%;
-    min-width: 295px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    align-items: flex-end;
-    justify-content: end;
-    padding: 20px 20px;
-    flex: 1 1 calc(25% - 20px);
-}
-
-.tool-03{
-    background-image: url(../images/tools-img-03.png);
-    width: 100%;
-    min-width: 295px;  
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    align-items: flex-end;
-    justify-content: end;
-    padding: 20px 20px;
-    flex: 1 1 calc(25% - 20px);
-}
-
-.tool-04{
-    background-image: url(../images/tools-img-04.png);
-    width: 100%;
-    min-width: 295px;   
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    align-items: flex-end;
-    justify-content: end;
-    padding: 20px 20px;
-    flex: 1 1 calc(25% - 20px);
-}
-
-.room-content{
+.room-content {
     width: 1240px;
     margin: auto;
 }
 
-.room-img{
-    width: 100%;
-    display: flex;
-}
 
-.main-room-img{
-    max-width: 925px;
-    width: 100%;
-}
 
-.sub-room-img{
-    display: flex;
-    flex-direction: column;
-}
+/* 병원시설소개 end  */
 
-.reservation{
+.reservation {
     background-color: #267AC7;
 }
 
-.reservation-content{
+.reservation-content {
     width: 1240px;
     margin: auto;
     padding: 40px 40px;
     background-color: #fff;
 }
 
-.reservation-title{
+.reservation-title {
     text-align: center;
 }
 
-.input-cta{
+.input-cta {
     width: 100%;
     max-width: 820px;
     display: flex;
@@ -435,7 +315,7 @@ header{
     justify-content: center;
 }
 
-.input-box{
+.input-box {
     width: 100%;
     max-width: 610px;
     display: flex;
@@ -444,27 +324,27 @@ header{
 
 
 
-.input-box-2{
+.input-box-2 {
     display: flex;
     width: 100%;
 }
 
-.input-box input{
+.input-box input {
     width: 100%;
     border: 1px solid #686868;
 }
 
-.input-box select{
+.input-box select {
     width: 100%;
     border: 1px solid #686868;
 }
 
-.select-box{
+.select-box {
     width: 50%;
     position: relative;
 }
 
-.select-box::after{
+.select-box::after {
     content: "";
     background-image: url(../images/icon/arrow.svg);
     position: absolute;
@@ -480,28 +360,30 @@ header{
 
 
 
-.small-input{
+.small-input {
     padding: 15px 10px;
 }
 
-.big-input{
+.big-input {
     padding: 80px 10px;
 }
 
-.rev-cta{
+.rev-cta {
     width: 100%;
     max-width: 190px;
     background-color: #267AC7;
 }
 
-.check-term{
+.check-term {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     gap: 5px;
 }
 
-.map-content{
+/* 예약안내 end  */
+
+.map-content {
     width: 1240px;
     margin: auto;
     display: flex;
@@ -510,18 +392,18 @@ header{
     gap: 105px;
 }
 
-.map-number{
+.map-number {
     height: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.call-number{
+.call-number {
     position: relative;
     padding-left: 35px;
 }
 
-.call-number::before{
+.call-number::before {
     content: "";
     background-image: url(../images/icon/call_icon.svg);
     background-repeat: no-repeat;
@@ -533,35 +415,37 @@ header{
     transform: translateY(-50%);
 }
 
-.t-time{
+.t-time {
     display: flex;
 }
 
-.daytime{
+.daytime {
     text-align: center;
 }
 
-.footer{
+/* 방문안내 end  */
+
+.footer {
     background-color: #333;
 }
 
-.footer-content{
+.footer-content {
     width: 1240px;
     margin: auto;
     padding: 80px 0;
 }
 
-.footer-text .logo{
+.footer-text .logo {
     padding-right: 40px;
     border-right: 1px solid #686868;
     margin-right: 40px;
 }
 
-.footer-text{
+.footer-text {
     display: flex;
 }
 
-.footer-info{
+.footer-info {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -569,7 +453,8 @@ header{
 }
 
 
-@media(max-width:1240px){
+@media(max-width:1240px) {
+
     .nav,
     .kv,
     .about-content,
@@ -582,39 +467,41 @@ header{
     .room-content,
     .reservation-content,
     .map-content,
-    .footer-content{
+    .footer-content {
         width: 96%;
     }
 
-    .br-none{
-        display: none;
-    }
-
-    .nav{
+    .nav {
         justify-content: right;
     }
 
-    .gnb{
+    .gnb {
         display: none;
     }
 
-    .kv{
+    /* header end  */
+
+    .kv {
         flex-direction: column;
     }
 
-    .kv-img{
+    .kv-img {
         width: 80%;
     }
 
-    .about-content{
+    /* kv end  */
+
+    .about-content {
         gap: 60px;
     }
 
-    .ab-desc-content{
+    /* about end  */
+
+    .ab-desc-content {
         display: none;
     }
 
-    .ab-desc{
+    .ab-desc {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -623,119 +510,123 @@ header{
         align-items: baseline;
     }
 
+    /* about 설명  */
 
-
-    .c-card{
+    .c-card {
         width: 33%;
         min-width: 178px;
     }
 
-    .doctor-content{
+    /* 4가지 기준 end  */
+
+    .doctor-content {
         flex-direction: column-reverse;
         justify-content: center;
         padding-left: 0;
         gap: 40px;
     }
 
-    .doctor-introduce{
+    .doctor-introduce {
         text-align: center;
         padding: 0;
     }
 
-    
-    .solution-content{
+    /* 의사소개 end  */
+
+    .solution-content {
         flex-direction: column;
         justify-content: center;
         gap: 40px;
     }
 
-    .solution-text{
+    .solution-text {
         margin: auto;
         max-width: 610px;
 
     }
 
-    .solution-title{
+    .solution-title {
         text-align: center;
         margin-bottom: 40px;
     }
 
-    .room-img{
-        flex-wrap: wrap;
-        justify-content: center;
-        overflow: hidden;
-    }
+    /* 네비게이션 임플란트 end  */
 
-    .sub-room-img{
-        flex-direction: row;
-    }
+    
 
-    .sub-room-img li{
-        width: 100%;
-        min-width: 134px;
-        aspect-ratio: 134/65.75;
-    }
+    /* 내부시설소개 end  */
 
-    .input-cta{
+    .input-cta {
         flex-direction: column;
         max-width: 610px;
     }
 
-    .rev-cta{
+    .rev-cta {
         max-width: none;
         padding: 20px;
     }
 
-    .select-box{
+    .select-box {
         width: 50%;
     }
 
-    .map-content{
+    /* 예약 안내 end  */
+
+    .map-content {
         flex-direction: column;
     }
 
 }
 
-@media(max-width:540px){
+@media(max-width:540px) {
 
 
 
-    .logo-title{
+    .logo-title {
         font-size: 20px;
     }
 
-    .kv{
+    /* header end  */
+
+    .kv {
         padding: 20px 0 40px;
     }
 
-    .kv-img{
+    .kv-img {
         max-width: 350px;
     }
 
-    .kv-content h1{
+    .kv-content h1 {
         font-size: 32px;
     }
 
-    .kv-txt h3{
-        display: none;
-    }
-    .btn-cta span{
+    .kv-txt h3 {
         display: none;
     }
 
-    .about-content{
+    .btn-cta span {
+        display: none;
+    }
+
+    /* kv end  */
+
+    .about-content {
         gap: 30px;
     }
 
-    .about-title p{
+    .about-title p {
         display: none;
     }
 
-    .about-desc{
+    /* about end  */
+
+    .about-desc {
         display: none;
     }
 
-    .c-card{
+    /* about 설명 end  */
+
+    .c-card {
         width: 40%;
         padding: 10px 10px;
         max-width: 178px;
@@ -743,83 +634,86 @@ header{
         min-width: 100px;
     }
 
-    .c-card-icon{
+    .c-card-icon {
         width: 80px;
     }
 
-    .card-txt{
+    .card-txt {
         margin-bottom: 15px;
     }
 
-    .solution-tag h2{
+    /* 4가지 기준 end  */
+
+    .solution-tag h2 {
         padding: 10px;
     }
 
-    .before-01,
-    .before-02,
-    .after-01,
-    .after-02{
-        padding-bottom: 10px;
-    }
+    /* 네비 임플란트 end  */
 
-    .sub-room-img li{
+    .sub-room-img li {
         min-width: 100.5px;
         aspect-ratio: 134/65.75;
     }
 
-    .reservation-content{
+    /* 시설안내 end  */
+
+    .reservation-content {
         padding: 20px 20px;
     }
 
-    .select-box{
+    .select-box {
         width: 60%;
     }
 
-    .rev-cta{
+    .rev-cta {
         padding: 20px;
     }
 
-    .small-input{
+    .small-input {
         padding: 10px 10px;
     }
 
-    .big-input{
+    .big-input {
         padding: 60px 10px;
     }
 
-    .map-content{
+    /* 예약안내 end  */
+
+    .map-content {
         gap: 40px;
     }
-    
-    .map-txt{
+
+    .map-txt {
         width: 80%;
     }
 
-    .map-img{
+    .map-img {
         width: 80%;
     }
 
-    .footer-text{
+    /* 방문안내 end  */
+
+    .footer-text {
         flex-direction: column;
         padding: 0 10%;
     }
 
-    .footer-content{
+    .footer-content {
         padding: 60px 0;
     }
 
-    .footer .logo{
+    .footer .logo {
         border-right: none;
         border-bottom: 1px solid #686868;
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
 
-    .logo img{
+    .footer .logo img {
         max-width: 30px;
     }
 
-    .footer-info{
+    .footer-info {
         width: 100%;
     }
 }

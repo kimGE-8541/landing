@@ -235,7 +235,15 @@ img {
     display: block;
 }
 
+.br-hide {
+    display: none;
+}
 
+@media(max-width:1240px){
+    .br-none {
+        display: none;
+    }
+}
 
 @media(max-width:540px){
     h1{
