@@ -53,13 +53,13 @@
 
 .gallery-module__text {
   padding: 1rem 1rem 1.15rem;
-  background-color: none;
+  background-color: #276ac7;
 }
 
 .gallery-module__title {
   margin: 0;
 
-  color: #0f172a;
+  color: #fff;
   transition: opacity 0.22s ease;
 }
 
@@ -96,13 +96,7 @@
 
 .gallery-module__thumb.is-active {
   opacity: 1;
-  border-color: #2563eb;
-  box-shadow: none;
-}
-
-.gallery-module__thumb.active {
-  opacity: 1;
-  border-color: #2563eb;
+  border-color: #276ac7;
   box-shadow: none;
 }
 

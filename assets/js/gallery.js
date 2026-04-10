@@ -38,29 +38,23 @@
     /**
      * 제목/설명 텍스트 변경 + 페이드 인
      * @param {string} title
-     * @param {string} desc
      * @param {boolean} [silent] true면 페이드 없이 즉시 반영
      */
-    function swapText(title, desc, silent) {
-      if (!mainTitle || !mainDesc) return;
+    function swapText(title, silent) {
+      if (!mainTitle) return;
 
       var nextTitle = title || '';
-      var nextDesc = desc || '';
 
       if (silent) {
         mainTitle.textContent = nextTitle;
-        mainDesc.textContent = nextDesc;
         return;
       }
 
       mainTitle.classList.add('is-fading');
-      mainDesc.classList.add('is-fading');
 
       window.setTimeout(function () {
         mainTitle.textContent = nextTitle;
-        mainDesc.textContent = nextDesc;
         mainTitle.classList.remove('is-fading');
-        mainDesc.classList.remove('is-fading');
       }, 140);
     }
 
