@@ -1,7 +1,8 @@
 @import url(common.css);
 
 header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     background-color: #267AC7;
     z-index: 99;
@@ -20,6 +21,7 @@ header {
     display: flex;
     gap: 5px;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo-title {
@@ -33,10 +35,17 @@ header {
 }
 
 .navi {
-    height: auto;
     display: flex;
-    flex-wrap: wrap;
 }
+
+.menu{
+    font-size: 2rem;
+}
+
+.mo-menu{
+    display: none;
+}
+
 
 /* header end  */
 
@@ -50,7 +59,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 40px 0 80px;
+    padding: 140px 0 80px;
     overflow: hidden;
 }
 
@@ -104,7 +113,7 @@ header {
 .about-img {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about-img img {
@@ -149,12 +158,11 @@ header {
 }
 
 .c-card {
-    width: 23%;
+    width: 25%-20px;
     min-width: 295px;
-    height: 394px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid #267AC7;
     padding: 80px 20px;
@@ -472,11 +480,28 @@ header {
     }
 
     .nav {
-        justify-content: right;
+        justify-content: space-between;
     }
 
-    .gnb {
-        display: none;
+    .navi {
+        width: 100%;
+        padding: 40px;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: -500%;
+        left: 0;
+        background-color: #267AC7;
+        transition: all .5s;
+    }
+
+    .mo-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .on-navi {
+        top:92px;
     }
 
     /* header end  */
@@ -514,6 +539,7 @@ header {
 
     .c-card {
         width: 33%;
+        height: 100%;
         min-width: 178px;
     }
 
@@ -552,7 +578,7 @@ header {
 
     /* 네비게이션 임플란트 end  */
 
-    
+
 
     /* 내부시설소개 end  */
 
@@ -574,22 +600,55 @@ header {
 
     .map-content {
         flex-direction: column;
+
+    }
+
+    .map-txt {
+        width: 100%;
+    }
+
+    .map-img {
+        width: 100%;
     }
 
 }
 
 @media(max-width:540px) {
 
-
+    .nav,
+    .kv,
+    .about-content,
+    .ab-desc-content,
+    .criteria-content,
+    .doctor-content,
+    .solution-content,
+    .before-after-content,
+    .tools-content,
+    .room-content,
+    .reservation-content,
+    .map-content,
+    .footer-content {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     .logo-title {
         font-size: 20px;
     }
 
+    .navi{
+        gap: 40px;
+    }
+
+    .on-navi{
+        top: 77px;
+    }
+
     /* header end  */
 
     .kv {
-        padding: 20px 0 40px;
+        padding: 100px 0 40px;
     }
 
     .kv-img {
@@ -626,12 +685,13 @@ header {
 
     /* about 설명 end  */
 
+    .criteria-card {
+        width: 100%;
+    }
+
     .c-card {
-        width: 40%;
-        padding: 10px 10px;
-        max-width: 178px;
-        max-height: 250px;
-        min-width: 100px;
+        width: 50%-10px;
+        padding: 30px 10px;
     }
 
     .c-card-icon {
@@ -656,6 +716,11 @@ header {
     }
 
     /* 시설안내 end  */
+
+    .reserve {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     .reservation-content {
         padding: 20px 20px;
@@ -684,22 +749,21 @@ header {
     }
 
     .map-txt {
-        width: 80%;
+        width: 100%;
     }
 
     .map-img {
-        width: 80%;
+        width: 100%;
     }
 
     /* 방문안내 end  */
 
     .footer-text {
         flex-direction: column;
-        padding: 0 10%;
     }
 
     .footer-content {
-        padding: 60px 0;
+        padding: 60px 16px;
     }
 
     .footer .logo {

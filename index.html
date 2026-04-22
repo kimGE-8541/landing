@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>데일리치과</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/common.css">
@@ -12,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/ba-slider.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -25,24 +28,27 @@
                     DAILY치과
                 </span>
             </div>
-            <div class="gnb">
-                <ul class="navi white-color gap-40">
-                    <li>
-                        <h3><a href="#">의료진 소개</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="#">진료 소개</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="#">장비·시설 소개</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="#">예약·상담</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="#">찾아오는 길</a></h3>
-                    </li>
-                </ul>
+            <ul class="navi white-color gap-40">
+                <li>
+                    <h3><a href="#">의료진 소개</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#">진료 소개</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#">장비·시설 소개</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#">예약·상담</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#">찾아오는 길</a></h3>
+                </li>
+            </ul>
+            <div class="mo-menu white-color">
+                <span class="material-symbols-outlined menu">
+                    menu
+                </span>
             </div>
         </nav>
     </header>
@@ -109,7 +115,7 @@
 
     <section class="about-desc">
         <div class="ab-desc-content white-color padding-120 gap-40">
-            <div class="ab-desc"  data-aos="fade-up">
+            <div class="ab-desc" data-aos="fade-up">
                 <h2 class="margin-b-20">
                     누적 임플란트 시술
                 </h2>
@@ -118,7 +124,7 @@
                     <h2>건</h2>
                 </div>
             </div>
-            <div class="ab-desc"  data-aos="fade-up" data-aos-delay="150">
+            <div class="ab-desc" data-aos="fade-up" data-aos-delay="150">
                 <h2 class="margin-b-20">
                     재수술 및 실패 케이스
                 </h2>
@@ -127,7 +133,7 @@
                     <h2>번</h2>
                 </div>
             </div>
-            <div class="ab-desc"  data-aos="fade-up" data-aos-delay="300">
+            <div class="ab-desc" data-aos="fade-up" data-aos-delay="300">
                 <h2 class="margin-b-20">
                     임플란트 진료 기간
                 </h2>
@@ -257,7 +263,7 @@
     </section>
     <!-- solution-end -->
 
-    <section class="before-after"  data-aos="fade-up">
+    <section class="before-after" data-aos="fade-up">
         <div class="before-after-content padding-120 gap-40 black-color">
             <div class="b-a-title" data-aos="fade-up">
                 <h3 class="primary-color margin-b-20">Daily Before & After</h3>
@@ -446,8 +452,7 @@
                     하고 있습니다.
                 </p>
             </div>
-            <div class="vibeSlider" aria-label="카드 슬라이더" data-aos="fade-up"
-            data-aos-delay="100">
+            <div class="vibeSlider" aria-label="카드 슬라이더" data-aos="fade-up" data-aos-delay="100">
                 <!-- Swiper root -->
                 <div class="swiper vibeSlider__swiper" id="vibeCardSwiper">
                     <div class="swiper-wrapper">
@@ -536,7 +541,7 @@
 
     <section class="hospital-room">
         <div class="room-content padding-120">
-            <div class="room-title margin-b-40" data-aos="fade-up" >
+            <div class="room-title margin-b-40" data-aos="fade-up">
                 <h3 class="primary-color margin-b-20">Daily Care Space</h3>
                 <h2 class="black-color">
                     데일리 치과의<br>
@@ -645,7 +650,7 @@
 
     <section class="map">
         <div class="map-content padding-120">
-            <div class="map-txt" data-aos="fade-up" >
+            <div class="map-txt" data-aos="fade-up">
                 <div class="map-title black-color">
                     <h2 class="margin-b-40">영업시간 및 방문안내</h2>
                     <p class="bold margin-b-20">인천 남동구 인주대로 593,<br>
@@ -732,6 +737,8 @@
     <script>
         AOS.init();
     </script>
+    <script src="assets/js/libs/jquery.min.js"></script>
+    <script src="assets/js/header-mo.js"></script>
 
 
 </body>

@@ -42,7 +42,6 @@
 /* 한 슬라이드는 viewport 폭을 100% 점유 */
 .ba-slide {
   min-width: 100%;
-  padding: 20px;
 }
 
 /* Before + After 2열 레이아웃 */
@@ -120,9 +119,6 @@
 }
 
 @media (max-width: 540px) {
-  .ba-slide {
-    padding: 12px;
-  }
 
   .ba-slide__pair {
     gap: 10px;
