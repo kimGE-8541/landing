@@ -111,11 +111,11 @@
 }
 
 .ba-slider__nav--prev {
-  left: 10px;
+  left: 0px;
 }
 
 .ba-slider__nav--next {
-  right: 10px;
+  right: 0px;
 }
 
 @media (max-width: 540px) {

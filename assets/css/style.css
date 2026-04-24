@@ -690,7 +690,8 @@ header {
     }
 
     .c-card {
-        width: 50%-10px;
+        height: 100%;
+        width: 50%-5px;
         padding: 30px 10px;
     }
 
