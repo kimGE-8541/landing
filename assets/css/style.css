@@ -431,6 +431,10 @@ header {
     text-align: center;
 }
 
+.map-img{
+    height: 100%;
+}
+
 /* 방문안내 end  */
 
 .footer {
